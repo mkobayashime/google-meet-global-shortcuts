@@ -1,7 +1,14 @@
 wxt = bunx wxt
+biome = yarn run biome
 
 deps: PHONY
 	bun install
+
+lint: deps PHONY
+	$(biome) check .
+
+lint.fix: deps PHONY
+	$(biome) check --fix .
 
 dev: deps PHONY
 	$(wxt)
