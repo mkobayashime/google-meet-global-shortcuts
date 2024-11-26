@@ -1,6 +1,6 @@
 {
-  "name": "wxt-starter",
-  "description": "manifest.json description",
+  "name": "google-meet-global-shortcuts",
+  "description": "Chrome Extension for adding shortcuts for toggling microphone/camera even when you're in other tabs",
   "private": true,
   "version": "0.0.0",
   "type": "module",
