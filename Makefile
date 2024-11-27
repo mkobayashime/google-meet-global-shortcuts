@@ -1,5 +1,5 @@
 wxt = bunx wxt
-biome = yarn run biome
+biome = bunx biome
 
 deps: PHONY
 	bun install
