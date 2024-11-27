@@ -2,7 +2,7 @@
 
 # Google Meet - Global Shortcuts
 
-Chrome Extension for adding shortcuts for toggling microphone/camera even when you're in other tabs
+Chrome Extension which provides shortcuts for turning on/off microphone/camera even when you're in other tabs
 
 ## Usage
 
