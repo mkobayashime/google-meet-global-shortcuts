@@ -1,10 +1,11 @@
 import { defineConfig } from "wxt";
+import packageJson from "./package.json";
 
 export default defineConfig({
   extensionApi: "chrome",
   manifest: {
     name: "Google Meet - Global Shortcuts",
-    version: "0.1.1",
+    version: packageJson.version,
     permissions: ["notifications", "tabs"],
     commands: {
       "toggle-audio": {
