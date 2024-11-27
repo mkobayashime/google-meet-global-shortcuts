@@ -12,7 +12,7 @@ export default defineConfig({
           default: "Ctrl+Shift+D",
           mac: "Alt+Shift+D",
         },
-        description: "Toggle audio",
+        description: "Toggle Audio",
       },
       "toggle-camera": {
         suggested_key: {
