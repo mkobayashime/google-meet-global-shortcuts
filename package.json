@@ -2,7 +2,7 @@
   "name": "google-meet-global-shortcuts",
   "description": "Chrome Extension which provides shortcuts for turning on/off microphone/camera even when you're in other tabs",
   "private": true,
-  "version": "0.1.1",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "postinstall": "wxt prepare"
