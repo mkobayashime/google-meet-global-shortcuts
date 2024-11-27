@@ -2,7 +2,7 @@
   "name": "google-meet-global-shortcuts",
   "description": "Chrome Extension for adding shortcuts for toggling microphone/camera even when you're in other tabs",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "scripts": {
     "postinstall": "wxt prepare"

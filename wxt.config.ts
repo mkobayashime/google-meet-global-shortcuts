@@ -4,7 +4,7 @@ export default defineConfig({
   extensionApi: "chrome",
   manifest: {
     name: "Google Meet - Global Shortcuts",
-    version: "0.1.0",
+    version: "0.1.1",
     permissions: ["notifications", "tabs"],
     commands: {
       "toggle-audio": {
