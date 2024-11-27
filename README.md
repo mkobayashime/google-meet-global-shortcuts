@@ -1,4 +1,4 @@
-![](./public/icon/96.png)
+![](./img/thumbnail.png)
 
 # Google Meet - Global Shortcuts
 
