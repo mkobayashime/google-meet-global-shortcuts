@@ -4,9 +4,20 @@
 
 Chrome Extension which provides shortcuts for turning on/off microphone/camera even when you're in other tabs
 
+Get it via [Chrome Web Store](https://chromewebstore.google.com/detail/google-meet-global-shortc/jdkiffhdknhmflombljefcdcolcbbihb)
+
 ## Usage
 
-As this extension is still *beta*, it's not published in Chrome Web Store yet. You can manually load zipped releases downloaded from [Releases](https://github.com/mkobayashime/google-meet-global-shortcuts/releases) page in the Extensions settings (`chrome://extensions`). Please note that you have to enable `Developer mode` there beforehand.
+### Default shortcut keys
+
+Shortcut|Operation
+---|---
+`Ctrl+Shift+D`<br>(`Option+Shift+D` in macOS)|Turn on/off microphone
+`Ctrl+Shift+E`<br>(`Option+Shift+E` in macOS)|Turn on/off camera
+
+### Shortcut keys customization
+
+Open Extensions settings of Chrome (`chrome://extensions/`) and click `Keyboard shortcuts` in the side menu.
 
 ## Credit
 
