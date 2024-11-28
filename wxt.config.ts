@@ -5,6 +5,8 @@ export default defineConfig({
   extensionApi: "chrome",
   manifest: {
     name: "Google Meet - Global Shortcuts",
+    description:
+      "Provides shortcuts for turning on/off microphone/camera in Google Meet meetings even when you're in other tabs",
     version: packageJson.version,
     permissions: ["notifications", "tabs"],
     commands: {
