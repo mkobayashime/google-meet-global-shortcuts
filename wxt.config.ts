@@ -24,6 +24,9 @@ export default defineConfig({
         },
         description: "Toggle Camera",
       },
+      "activate-meet-tab": {
+        description: "Open Meet tab",
+      },
     },
   },
 });
