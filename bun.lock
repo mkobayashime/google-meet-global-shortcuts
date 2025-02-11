@@ -5,7 +5,7 @@
       "name": "wxt-starter",
       "devDependencies": {
         "@biomejs/biome": "1.9.4",
-        "@types/chrome": "0.0.300",
+        "@types/chrome": "0.0.304",
         "typescript": "5.7.3",
         "wxt": "0.19.26",
       },
@@ -154,7 +154,7 @@
 
     "@szmarczak/http-timer": ["@szmarczak/http-timer@5.0.1", "", { "dependencies": { "defer-to-connect": "^2.0.1" } }, "sha512-+PmQX0PiAYPMeVYe237LJAYvOMYW1j2rH5YROyS3b4CTVJum34HfRvKvAzozHAQG0TnHNdUfY9nCeUyRAs//cw=="],
 
-    "@types/chrome": ["@types/chrome@0.0.300", "", { "dependencies": { "@types/filesystem": "*", "@types/har-format": "*" } }, "sha512-vS5bUmNjMrbPut43Q8plS8GTAiJE+pBOxw1ovGC4LcwiGNKTithAH7TxhzHeX4wNq/FsaLj5KaW7riI0CgYjIg=="],
+    "@types/chrome": ["@types/chrome@0.0.304", "", { "dependencies": { "@types/filesystem": "*", "@types/har-format": "*" } }, "sha512-ms9CLILU+FEMK7gcmgz/Mtn2E81YQWiMIzCFF8ktp98EVNIIfoqaDTD4+ailOCq1sGjbnEmfJxQ1FAsQtk5M3A=="],
 
     "@types/estree": ["@types/estree@1.0.6", "", {}, "sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw=="],
 
