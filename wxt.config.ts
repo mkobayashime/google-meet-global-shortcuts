@@ -2,7 +2,6 @@ import { defineConfig } from "wxt";
 import packageJson from "./package.json";
 
 export default defineConfig({
-  extensionApi: "chrome",
   manifest: {
     name: "Google Meet - Global Shortcuts",
     description:
@@ -29,4 +28,5 @@ export default defineConfig({
       },
     },
   },
+  outDirTemplate: "{{browser}}-mv{{manifestVersion}}",
 });
