@@ -10,6 +10,6 @@
     "@biomejs/biome": "1.9.4",
     "@types/chrome": "0.0.309",
     "typescript": "5.8.2",
-    "wxt": "0.19.29"
+    "wxt": "0.20.0"
   }
 }
