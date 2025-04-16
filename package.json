@@ -8,8 +8,8 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@types/chrome": "0.0.313",
-    "typescript": "5.8.2",
-    "wxt": "0.20.0"
+    "@types/chrome": "0.0.315",
+    "typescript": "5.8.3",
+    "wxt": "0.20.1"
   }
 }
