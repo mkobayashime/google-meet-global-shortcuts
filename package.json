@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@types/chrome": "0.0.320",
+    "@types/chrome": "0.1.0",
     "typescript": "5.8.3",
     "wxt": "0.20.6"
   }
