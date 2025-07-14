@@ -5,7 +5,7 @@
       "name": "wxt-starter",
       "devDependencies": {
         "@biomejs/biome": "1.9.4",
-        "@types/chrome": "0.0.320",
+        "@types/chrome": "0.1.0",
         "typescript": "5.8.3",
         "wxt": "0.20.6",
       },
@@ -158,7 +158,7 @@
 
     "@rollup/rollup-win32-x64-msvc": ["@rollup/rollup-win32-x64-msvc@4.27.4", "", { "os": "win32", "cpu": "x64" }, "sha512-3j4jx1TppORdTAoBJRd+/wJRGCPC0ETWkXOecJ6PPZLj6SptXkrXcNqdj0oclbKML6FkQltdz7bBA3rUSirZug=="],
 
-    "@types/chrome": ["@types/chrome@0.0.320", "", { "dependencies": { "@types/filesystem": "*", "@types/har-format": "*" } }, "sha512-LD0O6hqayM4/InMUB2fOGSh7lFkUlusa40mk6iUAxs0RHfvRYjjsDoRGsDh2DEJWP4Ckccf00FVhkhDHHIqy7g=="],
+    "@types/chrome": ["@types/chrome@0.1.0", "", { "dependencies": { "@types/filesystem": "*", "@types/har-format": "*" } }, "sha512-Mq712O2Ykw+EVAC5D1wt4Ot4v2rfp7nDosmxhIMKULJAa8o7ELeO88rWzRasaB+AYnqayzfX/XSWaDKBfk1rYQ=="],
 
     "@types/estree": ["@types/estree@1.0.6", "", {}, "sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw=="],
 
