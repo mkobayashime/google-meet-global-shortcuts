@@ -1,4 +1,5 @@
 import { typescriptWithBiome } from "@mkobayashime/shared-config/eslint";
+import { globalIgnores } from "eslint/config";
 
 export default [
   ...typescriptWithBiome,
@@ -9,4 +10,5 @@ export default [
       },
     },
   },
+  globalIgnores([".wxt"]),
 ];

@@ -1,8 +1,8 @@
 export default defineContentScript({
   matches: ["https://meet.google.com/*"],
   main() {
-    chrome.runtime.onMessage.addListener((message) => {
-      void (async () => {
+    chrome.runtime.onMessage.addListener((message: { type?: unknown }) => {
+      void (() => {
         switch (message.type) {
           case "toggleAudio":
           case "toggleCamera": {

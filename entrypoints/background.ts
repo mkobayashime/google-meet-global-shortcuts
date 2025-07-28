@@ -10,7 +10,7 @@ const findMeetTab = async () => {
   }
 
   if (tabIDs.length > 1) {
-    chrome.notifications.create({
+    await chrome.notifications.create({
       title: chrome.runtime.getManifest().name,
       message:
         "Error: Multiple tabs of Google Meet exist. Please close unnecessary ones and keep one.",
