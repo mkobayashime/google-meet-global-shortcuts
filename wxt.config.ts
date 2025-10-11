@@ -23,6 +23,13 @@ export default defineConfig({
 				},
 				description: "Toggle Camera",
 			},
+			"toggle-hand": {
+				suggested_key: {
+					default: "Ctrl+Shift+H",
+					mac: "Alt+Shift+H",
+				},
+				description: "Toggle Raised Hand",
+			},
 			"activate-meet-tab": {
 				description: "Open Meet tab",
 			},
