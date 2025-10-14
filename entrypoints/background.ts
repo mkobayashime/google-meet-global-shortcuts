@@ -38,6 +38,16 @@ export default defineBackground(() => {
 					});
 					break;
 				}
+				case "toggle-hand": {
+					const targetTabID = await findMeetTab();
+					if (!targetTabID) return;
+
+					void chrome.tabs.sendMessage(targetTabID, {
+						type: "toggleHand",
+					});
+
+					break;
+				}
 				case "activate-meet-tab": {
 					const targetTabID = await findMeetTab();
 					if (!targetTabID) return;
