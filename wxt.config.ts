@@ -5,7 +5,7 @@ export default defineConfig({
 	manifest: {
 		name: "Google Meet - Global Shortcuts",
 		description:
-			"Provides shortcuts for turning on/off microphone/camera in Google Meet meetings even when you're in other tabs",
+			"Provides shortcuts for turning on/off microphone/camera, raising hand, and reactions in Google Meet meetings even when you're in other tabs",
 		version: packageJson.version,
 		permissions: ["notifications", "tabs"],
 		commands: {
@@ -32,6 +32,33 @@ export default defineConfig({
 			},
 			"activate-meet-tab": {
 				description: "Open Meet tab",
+			},
+			"reaction-1-sparkling-heart": {
+				description: "Reaction 💖",
+			},
+			"reaction-2-thumbs-up": {
+				description: "Reaction 👍",
+			},
+			"reaction-3-tada": {
+				description: "Reaction 🎉",
+			},
+			"reaction-4-clap": {
+				description: "Reaction 👏",
+			},
+			"reaction-5-joy": {
+				description: "Reaction 😂",
+			},
+			"reaction-6-open-mouth": {
+				description: "Reaction 😮",
+			},
+			"reaction-7-cry": {
+				description: "Reaction 😢",
+			},
+			"reaction-8-thinking-face": {
+				description: "Reaction 🤔",
+			},
+			"reaction-9-thumbs-down": {
+				description: "Reaction 👎",
 			},
 		},
 	},
