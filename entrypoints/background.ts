@@ -1,3 +1,5 @@
+import type { Message } from "../types/message";
+
 const findMeetTab = async () => {
 	const tabIDs = (
 		await chrome.tabs.query({
@@ -35,7 +37,7 @@ export default defineBackground(() => {
 
 					void chrome.tabs.sendMessage(targetTabID, {
 						type: command === "toggle-audio" ? "toggleAudio" : "toggleCamera",
-					});
+					} satisfies Message);
 					break;
 				}
 				case "toggle-hand": {
@@ -44,7 +46,7 @@ export default defineBackground(() => {
 
 					void chrome.tabs.sendMessage(targetTabID, {
 						type: "toggleHand",
-					});
+					} satisfies Message);
 
 					break;
 				}

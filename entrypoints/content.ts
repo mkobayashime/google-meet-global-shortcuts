@@ -1,7 +1,9 @@
+import type { Message } from "../types/message";
+
 export default defineContentScript({
 	matches: ["https://meet.google.com/*"],
 	main() {
-		chrome.runtime.onMessage.addListener((message: { type?: unknown }) => {
+		chrome.runtime.onMessage.addListener((message: Message) => {
 			void (() => {
 				switch (message.type) {
 					case "toggleAudio":
