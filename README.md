@@ -2,7 +2,7 @@
 
 # Google Meet - Global Shortcuts
 
-Chrome Extension which provides shortcuts for turning on/off microphone/camera in Google Meet meetings even when you're in other tabs
+Chrome Extension which provides shortcuts for turning on/off microphone/camera, raising hand, and reactions in Google Meet meetings even when you're in other tabs
 
 Get it via [Chrome Web Store](https://chromewebstore.google.com/detail/google-meet-global-shortc/jdkiffhdknhmflombljefcdcolcbbihb)
 
@@ -16,6 +16,7 @@ Default Shortcut|Operation
 `Ctrl+Shift+E`<br>(`Option+Shift+E` in macOS)|Turn on/off camera
 `Ctrl+Shift+H`<br>(`Option+Shift+H` in macOS)|Raise or lower hand
 N/A|Open Meet tab
+N/A|Reactions (all emojis are supported)
 
 ### Shortcut keys customization
 
