@@ -7,12 +7,12 @@
 		"postinstall": "wxt prepare"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.2.5",
+		"@biomejs/biome": "2.2.7",
 		"@mkobayashime/shared-config": "2.0.0",
-		"@types/chrome": "0.1.22",
+		"@types/chrome": "0.1.24",
 		"eslint": "9.38.0",
 		"typescript": "5.9.3",
-		"typescript-eslint": "8.46.0",
+		"typescript-eslint": "8.46.2",
 		"wxt": "0.20.11"
 	}
 }
