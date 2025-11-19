@@ -3,7 +3,11 @@ biome = bunx biome
 eslint = bunx eslint
 
 deps: PHONY
+ifeq ($(CI), true)
+	bun install --frozen-lockfile
+else
 	bun install
+endif
 
 lint: deps PHONY
 	$(biome) check .
