@@ -6,7 +6,7 @@
       "name": "wxt-starter",
       "devDependencies": {
         "@biomejs/biome": "2.4.2",
-        "@mkobayashime/shared-config": "3.0.0",
+        "@mkobayashime/shared-config": "3.1.0",
         "@types/chrome": "0.1.31",
         "eslint": "9.39.1",
         "eslint-config-flat-gitignore": "2.1.0",
@@ -141,7 +141,7 @@
 
     "@jridgewell/sourcemap-codec": ["@jridgewell/sourcemap-codec@1.5.0", "", {}, "sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ=="],
 
-    "@mkobayashime/shared-config": ["@mkobayashime/shared-config@3.0.0", "", { "peerDependencies": { "@biomejs/biome": "^2.0.4", "eslint": "^9.31.0", "eslint-config-flat-gitignore": "^2.1.0", "typescript": "^5.8.3", "typescript-eslint": "^8.39.0" } }, "sha512-/wJWswLezPKDBWcn8FWSsVLuaTgBac69D7KsfC1snNxHjL7l7bf14To54tNmXw46RzY7G+GgHVJyKDVnR0gKHg=="],
+    "@mkobayashime/shared-config": ["@mkobayashime/shared-config@3.1.0", "", { "peerDependencies": { "@biomejs/biome": "^2.0.4", "eslint": "^9.31.0", "eslint-config-flat-gitignore": "^2.1.0", "typescript": "^5.8.3", "typescript-eslint": "^8.39.0" } }, "sha512-hWdg/8zYw1FzzQRolb4lIITm3MXywkfI0pv/zTVPrBd9RODgeWqHzK9O4g8oobiDUUvr0uNYCqQ/i8moBjV3xQ=="],
 
     "@nodelib/fs.scandir": ["@nodelib/fs.scandir@2.1.5", "", { "dependencies": { "@nodelib/fs.stat": "2.0.5", "run-parallel": "^1.1.9" } }, "sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g=="],
 
