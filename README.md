@@ -1,10 +1,21 @@
-![](./img/thumbnail.png)
+<img src="./public/icon/512.png" width="64" alt="Logo">
 
 # Google Meet - Global Shortcuts
 
 Chrome Extension which provides shortcuts for turning on/off microphone/camera, raising hand, and reactions in Google Meet meetings even when you're in other tabs
 
-Get it via [Chrome Web Store](https://chromewebstore.google.com/detail/google-meet-global-shortc/jdkiffhdknhmflombljefcdcolcbbihb)
+<br />
+
+<div>
+    <a href='https://chromewebstore.google.com/detail/google-meet-global-shortc/jdkiffhdknhmflombljefcdcolcbbihb' target='_blank'>
+        <img src="./img/chrome-web-store-badge.png" width="200" alt="Available in the Chrome Web Store">
+    </a>
+</div>
+<a href='https://chromewebstore.google.com/detail/google-meet-global-shortc/jdkiffhdknhmflombljefcdcolcbbihb' target='_blank'>
+Chrome Web Store
+</a>
+
+<br />
 
 ## Usage
 
