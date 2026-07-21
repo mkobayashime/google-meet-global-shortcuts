@@ -7,7 +7,7 @@
       "devDependencies": {
         "@biomejs/biome": "2.5.2",
         "@mkobayashime/shared-config": "4.1.0",
-        "@types/chrome": "0.1.43",
+        "@types/chrome": "0.2.2",
         "eslint": "10.3.0",
         "eslint-config-flat-gitignore": "2.3.0",
         "typescript": "5.9.3",
@@ -207,7 +207,7 @@
 
     "@rollup/rollup-win32-x64-msvc": ["@rollup/rollup-win32-x64-msvc@4.27.4", "", { "os": "win32", "cpu": "x64" }, "sha512-3j4jx1TppORdTAoBJRd+/wJRGCPC0ETWkXOecJ6PPZLj6SptXkrXcNqdj0oclbKML6FkQltdz7bBA3rUSirZug=="],
 
-    "@types/chrome": ["@types/chrome@0.1.43", "", { "dependencies": { "@types/filesystem": "*", "@types/har-format": "*" } }, "sha512-ukH/HhmR6ht+UTX3PLUWJxgJ/RQcK2Foj4lBzsF24SIWsXgqhGuXqjd8FFuwioPP7d/JUKLM4g8GZxw3F4HTcA=="],
+    "@types/chrome": ["@types/chrome@0.2.2", "", { "dependencies": { "@types/filesystem": "*", "@types/har-format": "*" } }, "sha512-8rSMZ4cvo2xmaSyQg0sN5yRL7oiDkntLoiHxUhfwQnv1mvnkrdoZ25SlNrKWmYKaeP50WvrfWj1pmc02+U9KKw=="],
 
     "@types/esrecurse": ["@types/esrecurse@4.3.1", "", {}, "sha512-xJBAbDifo5hpffDBuHl0Y8ywswbiAp/Wi7Y/GtAgSlZyIABppyurxVueOPE8LUQOxdlgi6Zqce7uoEpqNTeiUw=="],
 
