@@ -35,7 +35,7 @@ export default defineContentScript({
 	matches: ["https://meet.google.com/*"],
 	main() {
 		chrome.runtime.onMessage.addListener((message: Message) => {
-			void (() => {
+			(() => {
 				switch (message.type) {
 					case "toggleAudio":
 					case "toggleCamera": {
@@ -115,17 +115,15 @@ export default defineContentScript({
 						}
 
 						void (async () => {
-							const reactionButton = await awaitWithInterval<HTMLElement>(
-								() => {
-									const reactionButton = document.querySelector(
-										`button[aria-label='${kindsToEmojiDict[message.kind]}']`,
-									);
+							const reactionButton = await awaitWithInterval<HTMLElement>(() => {
+								const reactionButton = document.querySelector(
+									`button[aria-label='${kindsToEmojiDict[message.kind]}']`,
+								);
 
-									if (reactionButton instanceof HTMLElement) {
-										return { data: reactionButton };
-									}
-								},
-							);
+								if (reactionButton instanceof HTMLElement) {
+									return { data: reactionButton };
+								}
+							});
 
 							if (reactionButton) {
 								reactionButton.click();
