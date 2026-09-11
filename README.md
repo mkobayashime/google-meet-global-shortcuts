@@ -21,13 +21,13 @@ Chrome Web Store
 
 ### Default shortcut keys
 
-Default Shortcut|Operation
----|---
-`Ctrl+Shift+D`<br>(`Option+Shift+D` in macOS)|Turn on/off microphone
-`Ctrl+Shift+E`<br>(`Option+Shift+E` in macOS)|Turn on/off camera
-`Ctrl+Shift+H`<br>(`Option+Shift+H` in macOS)|Raise or lower hand
-N/A|Open Meet tab
-N/A|Reactions (all emojis are supported)
+| Default Shortcut                              | Operation                            |
+| --------------------------------------------- | ------------------------------------ |
+| `Ctrl+Shift+D`<br>(`Option+Shift+D` in macOS) | Turn on/off microphone               |
+| `Ctrl+Shift+E`<br>(`Option+Shift+E` in macOS) | Turn on/off camera                   |
+| `Ctrl+Shift+H`<br>(`Option+Shift+H` in macOS) | Raise or lower hand                  |
+| N/A                                           | Open Meet tab                        |
+| N/A                                           | Reactions (all emojis are supported) |
 
 ### Shortcut keys customization
 
