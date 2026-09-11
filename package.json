@@ -1,6 +1,6 @@
 {
 	"name": "google-meet-global-shortcuts",
-	"version": "1.3.2",
+	"version": "1.3.3",
 	"private": true,
 	"type": "module",
 	"scripts": {
