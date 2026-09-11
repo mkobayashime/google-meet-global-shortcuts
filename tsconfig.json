@@ -1,6 +1,7 @@
 {
 	"extends": "./.wxt/tsconfig.json",
 	"compilerOptions": {
-		"paths": {}
+		"paths": {},
+		"types": ["chrome"]
 	}
 }
