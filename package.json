@@ -10,7 +10,7 @@
 		"@types/chrome": "0.1.43",
 		"oxfmt": "0.67.0",
 		"oxlint": "1.82.0",
-		"oxlint-tsgolint": "7.0.2001",
+		"oxlint-tsgolint": "7.0.2002",
 		"typescript": "7.0.2",
 		"wxt": "0.21.4"
 	}
