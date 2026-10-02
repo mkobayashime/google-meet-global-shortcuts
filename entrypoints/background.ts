@@ -99,10 +99,17 @@ export default defineBackground(() => {
 					break;
 				}
 				case "activate-meet-tab": {
-					const targetTabID = await findMeetTab();
-					if (!targetTabID) return;
+					const meetTabs = await findMeetTabs();
+					if (meetTabs.length === 0) return;
 
-					void chrome.tabs.update(targetTabID, { active: true });
+					// Cycle through Meet tabs: move to the next one if a Meet tab is active
+					const activeMeetTab = await findActiveMeetTab();
+					const currentIndex = meetTabs.findIndex(({ id }) => id === activeMeetTab?.id);
+					const targetTab = meetTabs[(currentIndex + 1) % meetTabs.length];
+					if (targetTab?.id === undefined) return;
+
+					void chrome.tabs.update(targetTab.id, { active: true });
+					void chrome.windows.update(targetTab.windowId, { focused: true });
 
 					break;
 				}
