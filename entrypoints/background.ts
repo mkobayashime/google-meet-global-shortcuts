@@ -1,11 +1,28 @@
 import type { Message } from "../types/message";
 
+const MEET_URL_PATTERN = "https://meet.google.com/*";
+
+const findMeetTabs = async () =>
+	(await chrome.tabs.query({ url: MEET_URL_PATTERN }))
+		.filter((tab) => tab.id !== undefined)
+		.toSorted((a, b) => a.windowId - b.windowId || a.index - b.index);
+
+const findActiveMeetTab = async () => {
+	const [activeTab] = await chrome.tabs.query({
+		active: true,
+		lastFocusedWindow: true,
+		url: MEET_URL_PATTERN,
+	});
+	return activeTab;
+};
+
 const findMeetTab = async () => {
-	const tabIDs = (
-		await chrome.tabs.query({
-			url: "https://meet.google.com/*",
-		})
-	).flatMap(({ id }) => (id === undefined ? [] : [id]));
+	const activeMeetTab = await findActiveMeetTab();
+	if (activeMeetTab?.id !== undefined) {
+		return activeMeetTab.id;
+	}
+
+	const tabIDs = (await findMeetTabs()).flatMap(({ id }) => (id === undefined ? [] : [id]));
 
 	if (tabIDs.length === 0) {
 		return;
@@ -82,10 +99,17 @@ export default defineBackground(() => {
 					break;
 				}
 				case "activate-meet-tab": {
-					const targetTabID = await findMeetTab();
-					if (!targetTabID) return;
+					const meetTabs = await findMeetTabs();
+					if (meetTabs.length === 0) return;
 
-					void chrome.tabs.update(targetTabID, { active: true });
+					// Cycle through Meet tabs: move to the next one if a Meet tab is active
+					const activeMeetTab = await findActiveMeetTab();
+					const currentIndex = meetTabs.findIndex(({ id }) => id === activeMeetTab?.id);
+					const targetTab = meetTabs[(currentIndex + 1) % meetTabs.length];
+					if (targetTab?.id === undefined) return;
+
+					void chrome.tabs.update(targetTab.id, { active: true });
+					void chrome.windows.update(targetTab.windowId, { focused: true });
 
 					break;
 				}
