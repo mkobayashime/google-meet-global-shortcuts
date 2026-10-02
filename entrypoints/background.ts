@@ -1,11 +1,28 @@
 import type { Message } from "../types/message";
 
+const MEET_URL_PATTERN = "https://meet.google.com/*";
+
+const findMeetTabs = async () =>
+	(await chrome.tabs.query({ url: MEET_URL_PATTERN }))
+		.filter((tab) => tab.id !== undefined)
+		.toSorted((a, b) => a.windowId - b.windowId || a.index - b.index);
+
+const findActiveMeetTab = async () => {
+	const [activeTab] = await chrome.tabs.query({
+		active: true,
+		lastFocusedWindow: true,
+		url: MEET_URL_PATTERN,
+	});
+	return activeTab;
+};
+
 const findMeetTab = async () => {
-	const tabIDs = (
-		await chrome.tabs.query({
-			url: "https://meet.google.com/*",
-		})
-	).flatMap(({ id }) => (id === undefined ? [] : [id]));
+	const activeMeetTab = await findActiveMeetTab();
+	if (activeMeetTab?.id !== undefined) {
+		return activeMeetTab.id;
+	}
+
+	const tabIDs = (await findMeetTabs()).flatMap(({ id }) => (id === undefined ? [] : [id]));
 
 	if (tabIDs.length === 0) {
 		return;
