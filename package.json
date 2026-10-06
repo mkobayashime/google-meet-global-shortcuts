@@ -7,10 +7,10 @@
 		"postinstall": "wxt prepare"
 	},
 	"devDependencies": {
-		"@types/chrome": "0.3.0",
+		"@types/chrome": "0.3.4",
 		"oxfmt": "0.70.0",
 		"oxlint": "1.85.0",
-		"oxlint-tsgolint": "7.0.2001",
+		"oxlint-tsgolint": "7.0.2003",
 		"typescript": "7.0.2",
 		"wxt": "0.21.4"
 	}
