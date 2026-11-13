@@ -8,7 +8,7 @@
 	},
 	"devDependencies": {
 		"@types/chrome": "0.3.4",
-		"oxfmt": "0.76.0",
+		"oxfmt": "0.77.0",
 		"oxlint": "1.91.0",
 		"oxlint-tsgolint": "7.0.2003",
 		"typescript": "7.0.2",
